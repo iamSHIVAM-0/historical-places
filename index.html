@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fixed Header and Footer Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #F4E869;
+        }
+
+        header {
+            background-color: #FAF2D3;
+            color: #bc2c2c;
+            padding: 1px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            right: 0;
+        }
+
+        footer {
+            background-color: #5CD2E6;
+            color: #782323;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 70px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            header,
+            footer {
+                padding: 10px;
+            }
+        }
+
+
+        figure {
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-decoration:underline ;">Historical places</h1>
+    </header>
+
+    <div class="content">
+
+        <figure>
+            <img src="redfort.jpg" alt="red fort" style="width: 240px; height: 160px;border-radius: 20px;
+            padding: 5px;">
+            <figcaption style="color: #213555;font-weight: bold;">Red fort-Delhi</figcaption>
+            <p style="border: solid 2px rgb(18, 100, 29);width: 230px;padding: 3px;border-radius: 10px;margin: 10px;">
+                When it comes to the famous historical places in India, one cannot
+                miss the Red Fort in Delhi. Also popularly known as the Lal Qila, the Red Fort was constructed during
+                Shah Jahan’s reign in the 17th century.</p>
+        </figure>
+
+
+        <figure>
+            <img src="hawamahal.jpg" alt="Hawa Mahal" style="width: 240px; height: 160px;border-radius: 20px;
+            padding: 5px;">
+            <figcaption style="color: #213555;font-weight: bold;">Hawamahal-Rajsthan</figcaption>
+            <p style="border: solid 2px rgb(18, 100, 29);width: 230px;padding: 3px;border-radius: 10px;margin: 10px;">
+                Hawa Mahal in Jaipur is one of the best historical places in India,
+                in addition to being a prominent landmark of Rajasthan. Dating back to the 18th century, Hawa Mahal is a
+                5-storey structure that overlooks the bustling streets of Jaipur.
+            </p>
+        </figure>
+        <figure>
+            <img src="Victoria Memorial.jpg" alt="Victoria Memorial" style="width: 240px; height: 160px;border-radius: 20px;
+            padding: 5px;">
+            <figcaption style="color: #213555;font-weight: bold;">Victoria Memorial-Kolkata </figcaption>
+            <p style="border: solid 2px rgb(18, 100, 29);width: 230px;padding: 3px;border-radius: 10px;margin: 10px;">
+                Ranking amongst the top 10 historical places in India, Kolkata’s Victoria Memorial was constructed in
+                honour of Queen Victoria, making it one of the relics of the British Raj.The Victoria Memorial is almost
+                a replica of its namesake in London.
+            </p>
+        </figure>
+        <figure>
+            <img src="Khajuraho Temples.jpg" alt="Khajuraho temples" style="width: 240px; height: 160px;border-radius: 20px;
+            padding: 5px;">
+            <figcaption style="color: #213555;font-weight: bold;">Khajuraho Temples-Madhya Pradesh </figcaption>
+            <p style="border: solid 2px rgb(18, 100, 29);width: 230px;padding: 3px;border-radius: 10px;margin: 10px;">he
+                famous Khajuraho Temples in Madhya Pradesh are amongst the top 10 historical places in India, popular
+                for being home to a total of 85 Hindu and Jain temples, spread across three complexes.
+            </p>
+        </figure>
+
+
+    </div>
+
+    <footer>
+        <p>Designed And Developed By<strong> SHIVAM KUMAR</strong></p>
+    </footer>
+</body>
+
+</html>
